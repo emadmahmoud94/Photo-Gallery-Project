@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+
+.gallery {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+    justify-content: center;
+}

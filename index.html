@@ -5,9 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" >
+    <link rel="stylesheet" href="js/baguetteBox.css">
     <title>Photo Searcher</title>
 </head>
 <body>
-    
+    <main>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="gallery">
+            <a href="photos/01.jpg" data-caption="Field with bales of hay">
+                <img src="photos/thumbnails/01.jpg" alt="Field with bales of hay">
+            </a>
+            <a href="photos/02.jpg" data-caption="Lake with a mountain view">
+                <img src="photos/thumbnails/02.jpg" alt="Lake with a mountain view">
+            </a>
+            <a href="photos/03.jpg" data-caption="Field of trees">
+                <img src="photos/thumbnails/03.jpg" alt="Field of trees">
+            </a>
+            <a href="photos/04.jpg" data-caption="Lake with an iceberg">
+                <img src="photos/thumbnails/04.jpg" alt="Lake with an iceberg">
+            </a>
+            <a href="photos/05.jpg" data-caption="View of the rocks">
+                <img src="photos/thumbnails/05.jpg" alt="View of the rocks">
+            </a>
+            <a href="photos/06.jpg" data-caption="Forest with pine trees">
+                <img src="photos/thumbnails/06.jpg" alt="Forest with pine trees">
+            </a>
+            <a href="photos/07.jpg" data-caption="Swampy Forest">
+                <img src="photos/thumbnails/07.jpg" alt="Swampy Forest">
+            </a>
+            <a href="photos/08.jpg" data-caption="Sandy Hills">
+                <img src="photos/thumbnails/08.jpg" alt="Sandy Hills">
+            </a>
+            <a href="photos/09.jpg" data-caption="Road in the middle of the forest">
+                <img src="photos/thumbnails/09.jpg" alt="Road in the middle of the forest">
+            </a>
+            <a href="photos/10.jpg" data-caption="Distant view of the beach">
+                <img src="photos/thumbnails/10.jpg" alt="Distant view of the beach">
+            </a>
+            <a href="photos/11.jpg" data-caption="Overview of a forest from a cave">
+                <img src="photos/thumbnails/11.jpg" alt="Overview of a forest from a cave">
+            </a>
+            <a href="photos/12.jpg" data-caption="Field of flowers">
+                <img src="photos/thumbnails/12.jpg" alt="Field of flowers">
+            </a>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+        </script>
+        <script src="js/baguetteBox.js" async></script>
+        <script src="js/searchFilter.js"></script>
+        <script src="js/app.js" async></script>
 </body>
 </html>
