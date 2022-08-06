@@ -20,10 +20,12 @@ input {
 
 
 .gallery {
-    max-width: 1200px;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     grid-template-rows: 200px;
     grid-gap: 10px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
